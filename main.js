@@ -2,15 +2,25 @@
  * Your code here!
  ******************************************************************************/
 
+let x = getInput(0);
 
-
-
+if (x % 5 === 0 && x % 3 === 0){
+  console.log('FizzBuzz')
+}
+ else if(x % 5 === 0){
+    console.log('Buzz')
+ }
+else if (x % 3 === 0){
+  console.log('Fizz')
+}
+ else {console.log(getInput(0))
+}
 
 /*******************************************************************************
   The below helper function will return an argument the user used when launching
   the app.
 
-  So if the app was launched using the command `node main.js 5 8`, for example,
+  if the app was launched using the command `node main.js 5 8`, for example,
   5 would be the first argument, and 8 the second.
 
   Our helper function takes a number as a parameter and returns the argument
